@@ -42,5 +42,10 @@ print(my_list)
 for i in range(len(my_list)) :
     for j in range(len(my_list[i])) :
         num += 1
-        my_list[i][j] = num
-print(my_list)        
+        my_list[i][j] = num   # i*4 + (j+1) 각 요소별 값
+        print(num,end=' ')
+    print()    
+print(my_list)       
+
+my_list_2 = [[i*4+(j+1) for j in range(4)] for i in range(3)]
+print(my_list_2)
